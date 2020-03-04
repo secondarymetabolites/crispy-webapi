@@ -179,7 +179,7 @@ def start_scan(session_id):
         region['orfs'] = new_orfs
 
         new_grnas = {}
-        for _id, grna in region['grnas'].iteritems():
+        for _id, grna in region['grnas'].items():
             if grna['start'] < relative_start or grna['end'] > relative_end:
                 continue
             grna['start'] -= relative_start
